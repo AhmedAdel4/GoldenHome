@@ -69,17 +69,7 @@ class ManagerController extends Controller
             return redirect(route('manager.index'))->with('success','تم أضافة مدير جديد');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
+   
     /**
      * Show the form for editing the specified resource.
      *
@@ -103,7 +93,7 @@ class ManagerController extends Controller
     {
         $this->validate($request,[
             'name' => 'required',
-            'description' => 'require',
+            'description' => 'required',
             
             ]);
             $manager = manager::where('id' , $id)->first();
@@ -111,6 +101,8 @@ class ManagerController extends Controller
             $manager->description = $request->description;
             if($request->has('image'))
             {
+                $image_path = public_path().'/images/manager/'.$manager->image;
+                unlink($image_path);
                 $imageName = $request->image->getClientOriginalName();
                 $resize = Image::make($request->image->getRealPath());
                     $resize->resize(1151,1148)->save(public_path().'/images/manager/'.$imageName );
@@ -129,7 +121,10 @@ class ManagerController extends Controller
      */
     public function destroy($id)
     {
-        manager::where('id',$id)->delete();
+        $manager = manager::where('id' , $id)->first();
+        $image_path = public_path().'/images/manager/'.$manager->image;
+        unlink($image_path);
+        $manager->delete();
         return redirect()->back();
     }
 }

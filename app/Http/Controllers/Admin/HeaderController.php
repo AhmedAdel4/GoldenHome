@@ -66,6 +66,11 @@ class HeaderController extends Controller
         
         if($request->has('image'))
         {
+            if($group->image != null)
+            {
+                $image_path = public_path().'/images/header/'.$group->image;
+                unlink($image_path);
+            }
             $imageName = $request->image->getClientOriginalName();
             $resize = Image::make($request->image->getRealPath());
                 $resize->resize(2560,1440)->save(public_path().'/images/header/'.$imageName );

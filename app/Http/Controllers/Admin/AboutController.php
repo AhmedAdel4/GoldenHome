@@ -67,6 +67,11 @@ class AboutController extends Controller
         
         if($request->has('image'))
         {
+            if($group->image != null)
+            {
+                $image_path = public_path().'/images/about/'.$group->image;
+                unlink($image_path);
+            }
             $imageName = $request->image->getClientOriginalName();
             $resize = Image::make($request->image->getRealPath());
                 $resize->resize(1500,720)->save(public_path().'/images/about/'.$imageName );

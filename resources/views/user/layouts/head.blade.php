@@ -120,15 +120,13 @@ footer .input-group-addon {
 	background-color: #0141a2;
 	padding: 10px;
 }
-.f-address li {
-	display: inline-block;
-}
-.f-address li i {
+
+.foo i {
 	color: #2995de;
 	font-size: 22px;
 }
 
-.f-address li span i {
+.gr i {
 	color: green;
 	font-size: 22px;
 }

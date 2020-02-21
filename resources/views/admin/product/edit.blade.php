@@ -26,8 +26,8 @@
 					  <div class="custom-file">
 						
 						<input type="file" name="image"  class="custom-file-input" id="exampleInputFile">
-						<label class="custom-file-label" for="exampleInputFile">Choose file</label>
-					  </div>
+						<label class="custom-file-label" style="text-align: center" for="exampleInputFile">تحميل صوره</label>
+					</div>
 					</div>
 					<br>
 	
@@ -36,24 +36,24 @@
 						  <div class="custom-file">
 							
 							<input type="file" name="files[]"  class="custom-file-input" id="exampleInputFile" multiple>
-							<label class="custom-file-label" for="exampleInputFile">Choose file</label>
-						  </div>
+							<label class="custom-file-label" style="text-align: center" for="exampleInputFile">تحميل صوره</label>
+						</div>
 						</div>
 	
 	
 						<label style="text-align: right" class="col-sm-12 col-form-label">أدخل أبعاد المنتج</label>
 					<div class="row" style="text-align: right">
 						<div class="col-sm-4">
-							<input type="text" value="{{ $product['length-name'] }}" class="ln form-control @error('length-name') is-invalid @enderror" style="text-align: right" size="5" name="length-name" placeholder="الأسم" > 
-							<input type="text" value="{{ $product['length'] }}" class="ln form-control @error('length-value') is-invalid @enderror" style="text-align: right" size="5" name="length-value" placeholder="الرقم">
+							<input type="text" value="{{ $product['hight-name'] }}" class="ln form-control @error('hight-name') is-invalid @enderror" style="text-align: right" size="5" name="hight-name" placeholder="الأسم">  
+							<input type="text" value="{{ $product['hight'] }}" class="ln form-control @error('hight-value') is-invalid @enderror" style="text-align: right" size="5" name="hight-value" placeholder="الرقم">
 						</div>
 						<div class="col-sm-4">
 							<input type="text" value="{{ $product['width-name'] }}" class="ln form-control @error('width-name') is-invalid @enderror" style="text-align: right" size="5" name="width-name" placeholder="الأسم">
 							<input type="text" value="{{ $product['width'] }}" class="ln form-control @error('width-value') is-invalid @enderror" style="text-align: right" size="5" name="width-value" placeholder="الرقم">
 						</div>
 						<div class="col-sm-4">
-							<input type="text" value="{{ $product['hight-name'] }}" class="ln form-control @error('hight-name') is-invalid @enderror" style="text-align: right" size="5" name="hight-name" placeholder="الأسم">  
-							<input type="text" value="{{ $product['hight'] }}" class="ln form-control @error('hight-value') is-invalid @enderror" style="text-align: right" size="5" name="hight-value" placeholder="الرقم">
+							<input type="text" value="{{ $product['length-name'] }}" class="ln form-control @error('length-name') is-invalid @enderror" style="text-align: right" size="5" name="length-name" placeholder="الأسم" > 
+							<input type="text" value="{{ $product['length'] }}" class="ln form-control @error('length-value') is-invalid @enderror" style="text-align: right" size="5" name="length-value" placeholder="الرقم">
 						</div>
 					</div>
 					  <div class="form-group">

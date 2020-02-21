@@ -7,29 +7,27 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-
           <li class="nav-item">
-            <div class="btn-group">
+            <a class="nav-link js-scroll-trigger float-right" href="#about">نبذه عنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger float-right" href="#team">الأداره</a>
+          </li>
+          <li class="nav-item">
+            <div class="btn-group float-right">
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" style="color: blanchedalmond" data-toggle="dropdown">
               </button>
               <a href="#portfolio" class="btn  nav-link js-scroll-trigger">المنتجات</a>
-              <div class="dropdown-menu" style="background-color: black">
+              <div class="dropdown-menu" style="background-color: #212529; padding: 0%; margin: 0%">
                 @foreach ($categories as $category) 
                   @if ($category->products != null)
-                    <a class="dropdown-item nav-link js-scroll-trigger" style="float: right" href="#{{ 'cat-id'.$category->id }}">{{ $category->name }}</a>
+                    <a class="dropdown-item nav-link js-scroll-trigger" style="text-align: center" href="#{{ 'cat-id'.$category->id }}">{{ $category->name }}</a>
                   @endif
                 @endforeach
               </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">نبذه عنا</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">الأداره</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">تواصل معنا</a>
-          </li>
+          
+          
         </ul>
       </div>
     </div>

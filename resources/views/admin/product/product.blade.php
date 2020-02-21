@@ -27,7 +27,7 @@
 					<div class="input-group col-sm-12">
 					  <div class="custom-file">
 						
-						  <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+						<label class="custom-file-label" style="text-align: center" for="exampleInputFile">تحميل صوره</label>
 						<input type="file" name="image"  class="custom-file-input" id="exampleInputFile" lang="en">
 					  </div>
 					</div>
@@ -38,8 +38,8 @@
 						  <div class="custom-file">
 							
 							<input type="file" name="files[]"  class="custom-file-input" id="exampleInputFile1" multiple>
-							<label class="custom-file-label" for="exampleInputFile1">Choose file</label>
-						  </div>
+							<label class="custom-file-label" style="text-align: center" for="exampleInputFile1">تحميل صوره</label>
+						</div>
 						</div>
 						<br>
 	

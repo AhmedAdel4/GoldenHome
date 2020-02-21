@@ -4,94 +4,75 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 mt-2 mb-4">
 						<h2 class="mb-4 font-weight-bold" style="text-align: center">تواصل معنا</h2>
-						<ul class="f-address" style="text-align: right">
-							<li>
-								<div class="row">
-									<div class="col-10 float-right" style="text-align: right">
-										<h6 class="font-weight-bold mb-0">:العنوان</h6>
-										<p>القاهره,مصر القديمه,الزهراء,بجوار كنيسة الطاحونه</p>
-									</div>
-									<div class="col-1 float-right" style="text-align: right"><i class="fas fa-map-marker float-right" style="text-align: right"></i></div>
-								</div>
-							</li>
-							<br>
-							<li>
-								<div class="row">
-									<div class="col-10 float-right">
-										<h6 class="font-weight-bold mb-0">:للأستفسار</h6>
-										<p><a href="#">ahmedcrspo55@gmail.com</a></p>
-									</div>
-									<div class="col-1 float-right"><i class="far fa-envelope float-right"></i></div>
-								</div>
-							</li>
-							<br>
-							<li>
-								<div class="row">
-									<div class="col-10 float-right">
-										<h6 class="font-weight-bold mb-0">:هاتف أرضى</h6>
-										<p><a href="#">0115334421755</a></p>
-									</div>
-									<div class="col-1 float-right"><i class="fas fa-phone-volume float-right"></i></div>
-								</div>
-							</li>
-							{{-- <li>
-								<div class="row">
-									<div class="col-10 float-right">
-										<h6 class="font-weight-bold mb-0">:تليفون أرضى</h6>
-										<p><a href="#">555222544</a></p>
-									</div>
-									<div class="col-1 float-right"><i class="far fa-envelope float-right"></i></div>
-									<div class="col-1 float-right"><i class="fas fa-phone-volume float-right"></i></div>
-								</div>
-							</li> --}}
-						</ul>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 mt-2 mb-4">
-						<h5 class="mb-4 font-weight-bold" style="text-align: center">WHATSAPP</h5>
-						<ul class="f-address" style="text-align: right">
-							<li>
-								<div class="row">
-									<div class="col-1"><span><i class="fab fa-whatsapp"></i></span></div>
-									<div class="col-10">
-										<p class="mb-0"><a href="#"> </a> 01112027048</p>
-										<label>10 Mins Ago</label>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-1"><span><i class="fab fa-whatsapp"></i></span></div>
-									<div class="col-10">
-										<p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
-										<label>10 Mins Ago</label>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-1"><span><i class="fab fa-whatsapp"></i></span></div>
-									<div class="col-10">
-										<p class="mb-0"><a href="#">@userthemesrel </a> HTML Version Out Now</p>
-										<label>10 Mins Ago</label>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					
-					{{-- <div class="col-lg-4 col-md-6 col-sm-6 mt-2 mb-4">
-						<h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
-						<div class="input-group">
-						  	<input type="text" class="form-control" placeholder="Your Email Address">
-						  	<span class="input-group-addon" id="basic-addon2"><i class="fas fa-check"></i></span>
+						<div class="foo row">
+							<div class="col-10 float-right" style="text-align: right">
+								<h6 class="font-weight-bold mb-0">:العنوان</h6>
+								<p>القاهره,مصر القديمه,الزهراء,بجوار كنيسة الطاحونه</p>
+							</div>
+							<div class="col-1 float-right" style="text-align: right"><i class="fas fa-map-marker float-right" style="text-align: right"></i></div>
 						</div>
-						<ul class="social-pet mt-4">
-							<li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
-							<li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
-						</ul>
-					</div> --}}
+						<div class="foo row">
+							<div class="col-10 float-right">
+								<h6 class="font-weight-bold mb-0 float-right">:للأستفسار</h6>
+								<br>
+								<p class="float-right"><a >ahmedcrspo55@gmail.com</a></p>
+							</div>
+							<div class="col-1 float-right"><i class="far fa-envelope float-right"></i></div>
+						</div>
+						<div class="foo row">
+							<div class="col-10 float-right">
+								<h6 class="font-weight-bold mb-0 float-right">:هاتف أرضى</h6>
+								<br>
+								<p class="float-right"><a >01153344217</a></p>
+							</div>
+							<div class="col-1 float-right"><i class="fas fa-phone-volume float-right"></i></div>
+						</div>
+					
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 mt-2 mb-4" >
+						<h2 class="mb-4 font-weight-bold" style="text-align: center">واتس اب</h2>
+						<div class="row" style="padding: 5px">
+							
+							<div class="col-10 float-right">
+								<h6 class="font-weight-bold mb-0 float-right">الحاج/ أحمد حافظ</h6>
+								<br>
+								<div class="float-right">رئيس مجلس الأداره</div>
+								<br>
+								<div class=" float-right"><a class="float-right" >01153344217</a></div>
+							</div>
+							<div class="gr col-md-2 float-right">
+								<i class="fab fa-whatsapp"></i>
+							</div>
+						</div>
+						<div class="row" style="padding: 5px">
+							
+							<div class="col-10 float-right">
+								<h6 class="font-weight-bold mb-0 float-right">الحاج/ عبده حافظ</h6>
+								<br>
+								<div class="float-right">نائب رئيس مجلس الأداره</div>
+								<br>
+								<div class=" float-right"><a class="float-right" >01153344217</a></div>
+							</div>
+							<div class="gr col-md-2 float-right">
+								<i class="fab fa-whatsapp"></i>
+							</div>
+						</div>
+						<div class="row" style="padding: 5px">
+							
+							<div class="col-10 float-right">
+								<h6 class="font-weight-bold mb-0 float-right">الأستاذ/سعيد</h6>
+								<br>
+								<div class="float-right">المحاسب</div>
+								<br>
+								<div class=" float-right"><a class="float-right" >01153344217</a></div>
+							</div>
+							<div class="gr col-md-2 float-right">
+								<i class="fab fa-whatsapp"></i>
+							</div>
+						</div>
+
+						
+					</div>
 				</div>
 			</div>
 		</footer>

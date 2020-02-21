@@ -190,9 +190,9 @@ background-image: url('{{ '/images/about/'.$about->image }}') !important">
                                 </div>
 
                                 <ul style="list-style: none" >
-                                    <li>{{ $product->hight}} : {{ $product['hight-name'] }}</li>
-                                    <li>{{ $product->width}} : {{ $product['width-name'] }}</li>
                                     <li>{{ $product->length}} : {{ $product['length-name'] }}</li>
+                                    <li>{{ $product->width}} : {{ $product['width-name'] }}</li>
+                                    <li>{{ $product->hight}} : {{ $product['hight-name'] }}</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>

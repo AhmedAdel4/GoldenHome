@@ -155,6 +155,8 @@ class ProductController extends Controller
         $product->name = $request->name;
         if($request->hasFile('image'))
         {
+            $image_path = public_path().'/images/product/'.$product->image;
+            unlink($image_path);
             $imageName = $request->image->getClientOriginalName();
             $resize = Image::make($request->image->getRealPath());
             $resize->resize(400,400)->save(public_path().'/images/product/'.$imageName );
@@ -167,6 +169,8 @@ class ProductController extends Controller
             $images = product_image::where('product_id',$product->id)->get();
             foreach($images as $image)
             {
+                $image_path = public_path().'/images/product/'.$image->name;
+                unlink($image_path);
                 $image->delete();
             }
             foreach($request->file('files') as $file)
@@ -205,11 +209,15 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-       $product =  product::where('id',$id);
+       $product =  product::find($id);
+       $image_path = public_path().'/images/product/'.$product->image;
+       unlink($image_path);
         $images = product_image::where('product_id',$product->id)->get();
         foreach($images as $image)
         {
             $image->delete();
+            $image_path = public_path().'/images/product/'.$image->name;
+            unlink($image_path);
         }
         $product->delete();
         return redirect()->back();

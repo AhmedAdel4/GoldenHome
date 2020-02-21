@@ -32,8 +32,8 @@
 						  <div class="custom-file">
 							
 							<input type="file" name="image"  class="custom-file-input @error('imag') is-invalid @enderror" id="exampleInputFile">
-							<label class="custom-file-label" for="exampleInputFile">أختر صوره</label>
-						  </div>
+							<label class="custom-file-label" style="text-align: center" for="exampleInputFile">تحميل صوره</label>
+						</div>
 						</div>
 					
 	
